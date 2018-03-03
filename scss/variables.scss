@@ -1,6 +1,12 @@
 $blue: #5474fd;
-$darkblue: #043770;
+$darkblue: #04589f;
 $white: #fff;
+
+@font-face {
+	font-family: 'Aleo';
+	src: url(../fonts/AleoRegular.otf);
+	font-weight: normal;
+}
 
 @mixin transition {
 	transition: all .3s ease;
@@ -10,4 +16,27 @@ $white: #fff;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: .1em;
+}
+
+@mixin btn {
+	font-family: 'Aleo', Arial, sans-serif;
+	border: none;
+	padding: 13px 25px;
+	text-transform: uppercase;
+	background-color: $blue;
+	color: $white;
+	font-size: 14px;
+	letter-spacing: .1em;
+	@include transition;
+
+	&:hover {
+		background-color: rgba(84, 116, 283, .6);
+		@include transition;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		background-color: $darkblue;
+	}
 }

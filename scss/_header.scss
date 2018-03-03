@@ -1,0 +1,114 @@
+@import "variables.scss";
+
+.header {
+	position: relative;
+	padding: 12% 0 0;
+	background: url(../images/header-bg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: $white;
+	text-align: center;
+	overflow: hidden;
+
+	&__title {
+		font-size: 48px;
+		@include logo;
+
+	}
+
+	&__slogan {
+		font-size: 22px;
+		text-transform: capitalize;
+		letter-spacing: .31em;
+		margin-bottom: 3%;
+	}
+
+	&__field {
+		width: 43%;
+		padding: 13px 20px;
+
+		border: 2px solid $white;
+		text-align: center;
+		font-size: 14px;
+		text-transform: capitalize;
+		letter-spacing: .2em;
+	}
+
+	&__btn {
+		// font-family: 'Aleo', Arial, sans-serif;
+		width: 13%;
+		padding: 13px 20px;
+		border: 2px solid $white;
+		text-transform: uppercase;
+		background-color: $blue;
+		color: $white;
+		font-size: 14px;
+		letter-spacing: .1em;
+		@include transition;
+
+		&:hover {
+			background-color: $darkblue;
+			@include transition;
+		}
+		&:focus {
+			outline: none;
+		}
+		&:active {
+			background-color: $blue;
+		}
+	}
+
+	&__scroll {
+		margin: 8% 0;
+	}
+
+	&__txt {
+		font-size: 14px;
+		text-transform: capitalize;
+		letter-spacing: .2em;
+	}
+
+	&__arrow {
+
+	}
+
+	&__menu {
+		padding: 1.5% 0;
+		background-color: $blue;
+		color: $white;
+	}
+
+	&__menu-cont {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		font-size: 22px;
+		margin: 0;
+		@include logo;
+	}
+
+	&__nav {
+		font-family: 'Aleo', Arial, sans-serif;
+		width: 50%;
+		padding-left: 1%;
+		font-size: 14px;
+		text-transform: uppercase;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__ref {
+		color: $white;
+		text-decoration: none;
+		@include transition;
+
+		&:hover {
+			text-decoration: none;
+			color: #043770;
+			@include transition;
+		}
+	}
+}

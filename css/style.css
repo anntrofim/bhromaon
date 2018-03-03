@@ -1,0 +1,106 @@
+.header {
+  position: relative;
+  padding: 12% 0 0;
+  background: url(../images/header-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  overflow: hidden; }
+  .header__title {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em; }
+  .header__slogan {
+    font-size: 22px;
+    text-transform: capitalize;
+    letter-spacing: .31em;
+    margin-bottom: 3%; }
+  .header__field {
+    width: 43%;
+    padding: 13px 20px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: .2em; }
+  .header__btn {
+    width: 13%;
+    padding: 13px 20px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    background-color: #5474fd;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: .1em;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .header__btn:hover {
+      background-color: #043770;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+    .header__btn:focus {
+      outline: none; }
+    .header__btn:active {
+      background-color: #5474fd; }
+  .header__scroll {
+    margin: 8% 0; }
+  .header__txt {
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: .2em; }
+  .header__menu {
+    padding: 1.5% 0;
+    background-color: #5474fd;
+    color: #fff; }
+  .header__menu-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header__logo {
+    font-size: 22px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em; }
+  .header__nav {
+    font-family: 'Aleo', Arial, sans-serif;
+    width: 50%;
+    padding-left: 1%;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .header__ref {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .header__ref:hover {
+      text-decoration: none;
+      color: #043770;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+
+@font-face {
+  font-family: 'Aleo';
+  src: url(../fonts/AleoRegular.otf);
+  font-weight: normal; }
+
+body {
+  font-family: 'Josefin Sans', Arial, sans-serif; }

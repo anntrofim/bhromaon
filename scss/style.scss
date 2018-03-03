@@ -1,0 +1,12 @@
+@import "variables.scss";
+@import "_header.scss";
+
+@font-face {
+	font-family: 'Aleo';
+	src: url(../fonts/AleoRegular.otf);
+	font-weight: normal;
+}
+
+body {
+	font-family: 'Josefin Sans', Arial, sans-serif;
+}

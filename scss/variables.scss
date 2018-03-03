@@ -1,0 +1,13 @@
+$blue: #5474fd;
+$darkblue: #043770;
+$white: #fff;
+
+@mixin transition {
+	transition: all .3s ease;
+}
+
+@mixin logo {
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}

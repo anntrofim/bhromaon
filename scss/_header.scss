@@ -2,9 +2,8 @@
 
 .header {
 	padding: 12% 0 0;
-	background: url(../images/header-bg.jpg) no-repeat;
-	background-position: center;
-	background-size: cover;
+	background-image: url(../images/header-bg.jpg);
+	@include bg;
 	color: $white;
 	text-align: center;
 	overflow: hidden;

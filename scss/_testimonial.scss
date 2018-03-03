@@ -1,0 +1,20 @@
+@import "variables.scss";
+
+.testimonial {
+	padding: 5% 0;
+	background-image: url(../images/testimonial-bg.jpg);
+	@include bg;
+	text-align: center;
+	color: $white;
+	overflow: hidden;
+
+	&__title {
+		@include title;
+		margin-bottom: 5%;
+	}
+
+	&__btn {
+
+
+	}
+}

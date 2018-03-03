@@ -2,31 +2,24 @@
 
 .chooseus {
 	padding: 7% 0;
-	background: url(../images/chooseus-bg.jpg) no-repeat;
-	background-position: center;
-	background-size: cover;
+	background-image: url(../images/chooseus-bg.jpg);
+	@include bg;
 	color: $white;
 	overflow: hidden;
 
 	&__container {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 	}
 
 	&__info {
 		width: 50%;
-		padding-right: 20px;
+		padding-right: 15px;
 	}
 
 	&__title {
-		font-family: 'Aleo', Arial, sans-serif;
+		@include title;
 		margin: 10% 0;
-		font-size: 36px;
-	}
-
-	&__txt {
-		font-size: 16px;
 	}
 
 	&__btn {
@@ -37,7 +30,7 @@
 	&__gallery {
 		text-align: right;
 		width: 50%;
-		padding-left: 20px;
+		padding-left: 15px;
 	}
 
 	&__img {

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Aleo';
+  src: url(../fonts/AleoRegular.otf);
+  font-weight: normal; }
+
+.offer:first-child {
+  background-image: url(../images/offer1-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.offer:last-child {
+  background-image: url(../images/offer2-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }

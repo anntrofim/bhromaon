@@ -1,0 +1,33 @@
+@import "variables.scss";
+
+.comment {
+
+	display: flex;
+	justify-content: center;
+
+
+	&__photo {
+		width: 40%;
+	}
+
+	&__comm {
+		text-align: left;
+		background-color: #333333;
+		width: 60%;
+		padding: 4% 5%;
+
+	}
+
+	&__name {
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+
+	&__txt {
+		margin-top: 4%;
+
+
+	}
+
+
+}

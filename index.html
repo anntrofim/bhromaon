@@ -19,13 +19,13 @@
 			<input class="header__field" type="text" placeholder="Search Your Travel Destination"><input class="header__btn" type="submit" name="submit" value="Search">
 			<div class="header__scroll">
 				<p class="header__txt">Scroll down</p>
-				<img class="header__arrow" src="">
+				<a href="#chooseus"><img class="header__arrow" src="icons/arrow-down.svg"></a>
 			</div>
 		</div>
 
 		<div class="header__menu">
 			<div class="header__menu-cont container">
-				<p class="header__logo">Bhromaon</p>
+				<a class="header__logo" href="#">Bhromaon</a>
 				<nav class="header__nav">
 					<a class="header__ref" href="#">Who we are</a>
 					<a class="header__ref" href="#">What we do</a>
@@ -38,7 +38,7 @@
 
 	<main class="main">
 
-		<section class="chooseus">
+		<section class="chooseus" id="chooseus">
 			<div class="chooseus__container container">
 				<div class="chooseus__info">
 					<h3 class="chooseus__title">Why choose us</h3>
@@ -58,18 +58,18 @@
 		</section>
 
 		<section class="work">
-			<div class="container">
-				<div class="work__oprion">
-					<svg class="work__search"></svg>
-					<h2>Search places</h2>
+			<div class="work__container container">
+				<div class="work__option">
+					<img class="work__img" src="icons/search.svg">
+					<a class="work__ref work__ref--search" href="#">Search places</a>
 				</div>
-				<div class="work__oprion">
-					<svg class="work__select"></svg>
-					<h2>Select places</h2>
+				<div class="work__option">
+					<img class="work__img" src="icons/select.svg">
+					<a class="work__ref work__ref--select" href="#">Select places</a>
 				</div>
-				<div class="work__oprion">
-					<svg class="work__book"></svg>
-					<h2>Book &amp; Enjoy</h2>
+				<div class="work__option">
+					<img class="work__img" src="icons/enjoy.svg">
+					<a class="work__ref work__ref--book" href="#">Book &amp; Enjoy</a>
 				</div>
 			</div>
 		</section>
@@ -109,22 +109,29 @@
 					<img class="comment__photo" src="images/comment-img.jpg">
 					<div class="comment__comm">
 						<h3 class="comment__name">Sam Sumon</h3>
-						<p class="comment__txt">
+						<blockquote class="comment__txt">
 							But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system
-						</p>
+						</blockquote>
 					</div>
 				</div>
-				<button class="testimonial__btn"></button>
-				<button class="testimonial__btn"></button>
+				<div class="testimonial__btn-cont">
+					<button class="testimonial__btn testimonial__btn--left"></button>
+					<button class="testimonial__btn testimonial__btn--right"></button>
+				</div>
+
 			</div>
 		</section>
 	</main>
 
 	<footer class="footer">
-		<p class="footer__logo">Bahromaon</p>
+		<a class="footer__logo" href="#">Bhromaon</a>
 		<p class="footer__slogan">Safe travel anywhere</p>
 		<div class="footer__socials">
-
+			<img class="footer__soclogo" src="icons/social-facebook.svg">
+			<img class="footer__soclogo" src="icons/social-twitter.svg">
+			<img class="footer__soclogo" src="icons/social-linkedin.svg">
+			<img class="footer__soclogo" src="icons/social-youtube.svg">
+			<img class="footer__soclogo" src="icons/social-pinterest.svg">
 		</div>
 	</footer>
 </body>

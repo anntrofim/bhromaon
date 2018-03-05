@@ -28,6 +28,11 @@
 		font-size: 14px;
 		text-transform: capitalize;
 		letter-spacing: .2em;
+		color: #232323;
+
+		&:focus {
+			outline: none;
+		}
 	}
 
 	&__btn {
@@ -46,10 +51,11 @@
 		font-size: 14px;
 		text-transform: capitalize;
 		letter-spacing: .2em;
+		margin: 0;
 	}
 
 	&__arrow {
-
+		width: 25px;
 	}
 
 	&__menu {
@@ -65,9 +71,15 @@
 	}
 
 	&__logo {
-		font-size: 22px;
-		margin: 0;
+		@include ref;
 		@include logo;
+		font-size: 24px;
+		margin: 0;
+		color: $white;
+
+		&:hover {
+			color: $white;
+		}
 	}
 
 	&__nav {
@@ -81,14 +93,13 @@
 	}
 
 	&__ref {
+		@include ref;
 		color: $white;
-		text-decoration: none;
-		@include transition;
+		border-bottom: 2px solid transparent;
 
 		&:hover {
-			text-decoration: none;
-			color: $darkblue;
-			@include transition;
+			color: $white;
+			border-bottom: 2px solid;
 		}
 	}
 }

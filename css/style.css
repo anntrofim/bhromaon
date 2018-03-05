@@ -34,7 +34,10 @@
     text-align: center;
     font-size: 14px;
     text-transform: capitalize;
-    letter-spacing: .2em; }
+    letter-spacing: .2em;
+    color: #232323; }
+    .header__field:focus {
+      outline: none; }
   .header__btn {
     font-family: 'Aleo', Arial, sans-serif;
     border: none;
@@ -66,7 +69,10 @@
   .header__txt {
     font-size: 14px;
     text-transform: capitalize;
-    letter-spacing: .2em; }
+    letter-spacing: .2em;
+    margin: 0; }
+  .header__arrow {
+    width: 25px; }
   .header__menu {
     padding: 1.5% 0;
     background-color: #5474fd;
@@ -82,11 +88,23 @@
     -ms-flex-align: center;
     align-items: center; }
   .header__logo {
-    font-size: 22px;
-    margin: 0;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: .1em; }
+    letter-spacing: .1em;
+    font-size: 24px;
+    margin: 0;
+    color: #fff; }
+    .header__logo:hover {
+      text-decoration: none;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+    .header__logo:hover {
+      color: #fff; }
   .header__nav {
     font-family: 'Aleo', Arial, sans-serif;
     width: 50%;
@@ -100,17 +118,20 @@
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .header__ref {
-    color: #fff;
     text-decoration: none;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
-    transition: all .3s ease; }
+    transition: all .3s ease;
+    color: #fff;
+    border-bottom: 2px solid transparent; }
     .header__ref:hover {
       text-decoration: none;
-      color: #04589f;
       -webkit-transition: all .3s ease;
       -o-transition: all .3s ease;
       transition: all .3s ease; }
+    .header__ref:hover {
+      color: #fff;
+      border-bottom: 2px solid; }
 
 @font-face {
   font-family: 'Aleo';
@@ -239,7 +260,7 @@
   font-weight: normal; }
 
 .testimonial {
-  padding: 5% 0;
+  padding: 7% 0;
   background-image: url(../images/testimonial-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -251,7 +272,33 @@
     font-family: 'Aleo', Arial, sans-serif;
     font-size: 36px;
     text-transform: capitalize;
-    margin-bottom: 5%; }
+    margin-bottom: 7%; }
+  .testimonial__btn-cont {
+    text-align: right; }
+  .testimonial__btn {
+    padding: 15px 25px;
+    background-color: transparent;
+    border: 1px solid;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    margin: 20px 0 0 5px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .testimonial__btn:hover {
+      background-color: rgba(84, 116, 255, 0.2);
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+    .testimonial__btn:focus {
+      outline: none; }
+    .testimonial__btn:active {
+      background-color: rgba(84, 116, 255, 0.4); }
+    .testimonial__btn--left {
+      background-image: url(../icons/arrow-left.svg); }
+    .testimonial__btn--right {
+      background-image: url(../icons/arrow-right.svg); }
 
 @font-face {
   font-family: 'Aleo';
@@ -277,6 +324,101 @@
     text-transform: uppercase; }
   .comment__txt {
     margin-top: 4%; }
+
+@font-face {
+  font-family: 'Aleo';
+  src: url(../fonts/AleoRegular.otf);
+  font-weight: normal; }
+
+.footer {
+  background-color: #232323;
+  color: #fff;
+  padding: 7% 0 3%;
+  text-align: center;
+  overflow: hidden; }
+  .footer__logo {
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    letter-spacing: .14em;
+    font-size: 24px;
+    margin: 0;
+    color: #fff; }
+    .footer__logo:hover {
+      text-decoration: none;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+    .footer__logo:hover {
+      color: #fff; }
+  .footer__slogan {
+    text-transform: capitalize;
+    letter-spacing: .1em;
+    margin-bottom: 20px; }
+  .footer__soclogo {
+    width: 20px;
+    margin: 0 9px;
+    cursor: pointer;
+    -webkit-filter: brightness(3);
+    filter: brightness(3);
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease; }
+    .footer__soclogo:hover {
+      -webkit-filter: brightness(1);
+      filter: brightness(1);
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease; }
+
+@font-face {
+  font-family: 'Aleo';
+  src: url(../fonts/AleoRegular.otf);
+  font-weight: normal; }
+
+.work {
+  font-family: 'Aleo', Arial, sans-serif;
+  padding: 5% 0;
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  overflow: hidden; }
+  .work__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .work__option {
+    width: 30%; }
+  .work__img {
+    width: 20%; }
+  .work__ref {
+    display: block;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    font-family: 'Aleo', Arial, sans-serif;
+    font-size: 36px;
+    text-transform: capitalize;
+    margin-top: 5%;
+    color: #fff; }
+    .work__ref:hover {
+      text-decoration: none;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+    .work__ref--search:hover {
+      color: #5474fd; }
+    .work__ref--select:hover {
+      color: #ff6363; }
+    .work__ref--book:hover {
+      color: #00a2ff; }
 
 body {
   font-family: 'Josefin Sans', Arial, sans-serif; }

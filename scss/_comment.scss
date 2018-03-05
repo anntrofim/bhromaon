@@ -1,10 +1,8 @@
 @import "variables.scss";
 
 .comment {
-
 	display: flex;
 	justify-content: center;
-
 
 	&__photo {
 		width: 40%;
@@ -15,7 +13,6 @@
 		background-color: #333333;
 		width: 60%;
 		padding: 4% 5%;
-
 	}
 
 	&__name {
@@ -25,9 +22,5 @@
 
 	&__txt {
 		margin-top: 4%;
-
-
 	}
-
-
 }

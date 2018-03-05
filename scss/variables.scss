@@ -53,3 +53,13 @@ $white: #fff;
 		background-color: $darkblue;
 	}
 }
+
+@mixin ref {
+	text-decoration: none;
+	@include transition;
+
+	&:hover {
+		text-decoration: none;
+		@include transition;
+	}
+}

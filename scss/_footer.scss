@@ -1,0 +1,45 @@
+@import "variables.scss";
+
+.footer {
+	background-color: #232323;
+	color: $white;
+	padding: 7% 0 3%;
+	text-align: center;
+	overflow: hidden;
+
+	&__logo {
+		@include ref;
+		@include logo;
+		letter-spacing: .14em;
+		font-size: 24px;
+		margin: 0;
+		color: $white;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	&__slogan {
+		text-transform: capitalize;
+		letter-spacing: .1em;
+		margin-bottom: 20px;
+	}
+
+	&__socials {
+
+	}
+
+	&__soclogo {
+		width: 20px;
+		margin: 0 9px;
+		cursor: pointer;
+		filter: brightness(3);
+		transition: all .2s ease;
+
+		&:hover {
+			filter: brightness(1);
+			transition: all .2s ease;
+		}
+	}
+}

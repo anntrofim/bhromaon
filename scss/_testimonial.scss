@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 .testimonial {
-	padding: 5% 0;
+	padding: 7% 0;
 	background-image: url(../images/testimonial-bg.jpg);
 	@include bg;
 	text-align: center;
@@ -10,11 +10,39 @@
 
 	&__title {
 		@include title;
-		margin-bottom: 5%;
+		margin-bottom: 7%;
+	}
+
+	&__btn-cont {
+		text-align: right;
 	}
 
 	&__btn {
+		padding: 15px 25px;
+		background-color: transparent;
+		border: 1px solid;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 50%;
+		margin: 20px 0 0 5px;
+		@include transition;
 
+		&:hover {
+			background-color: rgba(84, 116, 283, .2);
+			@include transition;
+		}
+		&:focus {
+			outline: none;
+		}
+		&:active {
+			background-color: rgba(84, 116, 283, .4);
+		}
 
+		&--left {
+			background-image: url(../icons/arrow-left.svg);
+		}
+		&--right {
+			background-image: url(../icons/arrow-right.svg);
+		}
 	}
 }
